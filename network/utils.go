@@ -27,7 +27,10 @@ func LookupMirrorIP(host string) (string, error) {
 
 // RemoteIPFromAddr removes the port from a remote address (x.x.x.x:yyyy)
 func RemoteIPFromAddr(remoteAddr string) string {
-	return remoteAddr[:strings.LastIndex(remoteAddr, ":")]
+	if len(remoteAddr) > 0 {
+		return remoteAddr[:strings.LastIndex(remoteAddr, ":")]
+	}
+	return ""
 }
 
 // ExtractRemoteIP extracts the remote IP from an X-Forwarded-For header
