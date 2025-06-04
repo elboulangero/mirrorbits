@@ -184,6 +184,13 @@ func TestConcatURL(t *testing.T) {
 	}
 }
 
+func TestIsZero(t *testing.T) {
+	tt := time.Time{}
+	if IsZero(tt) != true {
+		t.Fatal("Expected true, got false")
+	}
+}
+
 func TestTimeKeyCoverage(t *testing.T) {
 	date1Start := time.Date(2015, 10, 30, 12, 42, 11, 0, time.UTC)
 	date1End := time.Date(2015, 12, 2, 13, 42, 11, 0, time.UTC)
