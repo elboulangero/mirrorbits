@@ -212,7 +212,7 @@ func (g *GeoIP) IsIPv6(ip string) bool {
 	return strings.Contains(ip, ":")
 }
 
-// IsValid returns true if the given address is valid
+// IsValid returns true if the GeoIP record is valid
 func (g *GeoIPRecord) IsValid() bool {
 	return len(g.CountryCode) > 0
 }
