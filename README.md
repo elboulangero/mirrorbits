@@ -85,7 +85,6 @@ A docker "quick start" can be found [on the wiki](https://github.com/etix/mirror
 
 ### Manual build
 
-
 Go >= 1.11:
 ```
 $ git clone https://github.com/etix/mirrorbits.git
@@ -117,7 +116,8 @@ To run the server:
 ```
 mirrorbits daemon
 ```
-Additional options can be found with ```mirrorbits -help```.
+
+Additional options can be found with `mirrorbits -help`.
 
 To run the cli:
 ```
@@ -140,11 +140,11 @@ By appending `?mirrorlist` to any file served by mirrorbits, you'll be able to g
 
 ### Realtime mirrors statistics
 
-Mirror statistics are available by querying mirrorbits with the `?mirrorstats` argument. You can see a [live example here](https://get.videolan.org/?mirrorstats).
+Mirror statistics are available by querying Mirrorbits with the `?mirrorstats` argument. You can see a [live example here](https://get.videolan.org/?mirrorstats).
 
 ## Clustering / High availability
 
-Multiple instances of mirrorbits can be started simultaneously on different servers, discovery of other nodes should be automatic as long as all the instances are connected to the same redis server. In addition to the clustering it is advised to use redis-sentinel to monitor the database and gracefully handle failover.
+Multiple instances of Mirrorbits can be started simultaneously on different servers, discovery of other nodes should be automatic as long as all the instances are connected to the same redis server. In addition to the clustering it is advised to use redis-sentinel to monitor the database and gracefully handle failover.
 
 ## Upgrading
 
@@ -163,7 +163,7 @@ proxy_set_header X-Forwarded-For $remote_addr;
 
 # We're social!
 
-The best place to discuss about mirrorbits is to join the [#VideoLAN IRC channel on Libera.chat](https://www.videolan.org/webirc/).
+The best place to discuss about Mirrorbits is to join the [#VideoLAN IRC channel on Libera.chat](https://www.videolan.org/webirc/).
 For the latest news, you can follow [@mirrorbits](http://twitter.com/mirrorbits) on Twitter.
 
 # License MIT
