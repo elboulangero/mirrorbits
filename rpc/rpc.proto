@@ -27,11 +27,11 @@ service CLI {
 
 message VersionReply {
     string Version = 1;
-	string Build = 2;  
-	string GoVersion = 3; 
-	string OS = 4;
-	string Arch = 5;
-	int32 GoMaxProcs = 6;
+    string Build = 2;
+    string GoVersion = 3;
+    string OS = 4;
+    string Arch = 5;
+    int32 GoMaxProcs = 6;
 }
 
 message MatchRequest {
