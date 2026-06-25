@@ -3,6 +3,7 @@ module github.com/etix/mirrorbits
 require (
 	github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f
 	github.com/etix/goftp v0.0.0-20170217140226-0c13163a1028
+	github.com/golang/protobuf v1.4.1
 	github.com/gomodule/redigo v0.0.0-20181026001555-e8fc0692a7e2
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
 	github.com/oschwald/maxminddb-golang v1.5.0
@@ -21,7 +22,7 @@ require (
 	github.com/stretchr/testify v1.4.0 // indirect
 	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 // indirect
 	golang.org/x/text v0.3.2 // indirect
-	google.golang.org/genproto v0.0.0-20190911173649-1774047e7e51 // indirect
+	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	vitess.io/vitess v2.1.1+incompatible // indirect
 )
