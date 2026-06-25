@@ -41,6 +41,7 @@ var (
 
 // CLI object handles the server side RPC of the CLI
 type CLI struct {
+	UnimplementedCLIServer
 	listener net.Listener
 	server   *grpc.Server
 	sig      chan<- os.Signal
